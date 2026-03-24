@@ -12,7 +12,7 @@ services:
       - "--api.insecure"
       - "--providers.docker"
       - "--providers.docker.exposedbydefault=false"
-      - "--providers.docker.network=chicko_web"
+      - "--providers.docker.network=jewelry_web"
       - "--entrypoints.http.address=:80"
       - "--entrypoints.http.forwardedHeaders.insecure=true"
       - "--entrypoints.https.address=:443"
@@ -56,14 +56,14 @@ services:
       web:
     labels:
       - "traefik.enable=true"
-      - "traefik.docker.network=chicko_web"
+      - "traefik.docker.network=jewelry_web"
       - "traefik.http.routers.pgadmin.rule=Host(`pgadmin.localhost`)"
       - "traefik.http.services.pgadmin.loadbalancer.server.port=80"
 
   management-api:
-    image: hub.gerak/chicko/management:${PROJECT_VARIANT}
+    image: hub.gerak/jewelry/management:${PROJECT_VARIANT}
     build:
-      dockerfile: ChickoBack/Dockerfile
+      dockerfile:JewelryBack/Dockerfile
       context: ..
       args:
         - BUILD_CONFIGURATION=${PROJECT_CONFIGURATION}
@@ -109,9 +109,9 @@ services:
     command: yarn
 
   management-client:
-    image: hub.gerak/chicko/management-client:${PROJECT_VARIANT}
+    image: hub.gerak/jewelry/management-client:${PROJECT_VARIANT}
     build:
-      dockerfile: /ChickoFront/Dockerfile
+      dockerfile: /JewelryFront/Dockerfile
       context: ..
     environment:
       - CHOKIDAR_USEPOLLING=true
