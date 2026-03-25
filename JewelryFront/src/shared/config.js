@@ -1,1 +1,1 @@
-export const API_BASE = process.env.REACT_APP_API_DOMAIN_BASE;
+export const API_BASE = process.env.VITE_API_DOMAIN_BASE;

@@ -1,20 +1,20 @@
-@import "../../../styles/Mixins";
+@use "../../../styles/Mixins.scss";
 
 .home {
-  @include content
+  @include Mixins.content
 }
 
 .title {
-  @include content_title;
+  @include Mixins.content_title;
   text-align: center;
 }
 
 b {
-  @include huge_text;
+  @include Mixins.huge_text;
   font-style: italic;
 }
 
 .description {
-  @include content_descr;
+  @include Mixins.content_descr;
   line-height: 2.5rem;
 }

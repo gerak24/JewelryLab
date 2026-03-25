@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./CartProduct.module.scss";
-import {addToCart, removeFromCart} from "../../../../features/cart/cartSlice";
+import {addToCart, removeFromCart} from "@/features/cart/cartSlice";
 import {useDispatch} from "react-redux";
 
 const CartProduct = ({item}) => {

@@ -1,14 +1,14 @@
-import HomePage from "./pages/HomePage";
-import React, {useLayoutEffect, useState} from "react";
-import {Route, Routes} from "react-router-dom";
-import ContactPage from "./pages/ContactPage";
-import CatalogPage from "./pages/CatalogPage";
-import CartPage from "./pages/СartPage"
-import AuthPage from "./pages/AuthPage";
-import NomencPage from "./pages/NomencPage";
-import OrdersPage from "./pages/OrdersPage";
-import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
-import {Toaster} from "react-hot-toast";
+import HomePage from './pages/HomePage';
+import React, {useLayoutEffect, useState} from 'react';
+import {Route, Routes} from 'react-router-dom';
+import ContactPage from './pages/ContactPage';
+import CatalogPage from './pages/CatalogPage';
+import CartPage from './pages/СartPage'
+import AuthPage from './pages/AuthPage';
+import NomencPage from './pages/NomencPage';
+import OrdersPage from './pages/OrdersPage';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+import {Toaster} from 'react-hot-toast';
 
 
 function App() {

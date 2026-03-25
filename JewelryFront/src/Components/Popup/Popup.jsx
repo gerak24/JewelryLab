@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Popup.module.scss'
-import {useDispatch, useSelector} from "react-redux";
-import {hidePopup} from "../../features/cart/productSlice";
-import {addToCart} from "../../features/cart/cartSlice";
+import {useDispatch, useSelector} from 'react-redux';
+import {hidePopup} from '@/features/cart/productSlice';
+import {addToCart} from '@/features/cart/cartSlice';
 
 const Popup = () => {
   const item = useSelector((state) => state.product.value)

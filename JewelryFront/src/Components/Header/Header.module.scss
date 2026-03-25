@@ -1,5 +1,5 @@
-@import "../../styles/Mixins.scss";
-@import "../../styles/Variables.scss";
+@use "../../styles/Mixins.scss";
+@use "../../styles/Variables.scss";
 
 .header {
   background-color: #251f23;
@@ -38,8 +38,8 @@
 
 .header_text {
   text-decoration: none;
-  @include light_gray_font;
-  @include big_text;
+  @include Mixins.light_gray_font;
+  @include Mixins.big_text;
 }
 
 .header_image {

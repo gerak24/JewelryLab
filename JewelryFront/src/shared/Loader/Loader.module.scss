@@ -1,4 +1,4 @@
-﻿@import "../../styles/Mixins.scss";
+﻿@use "../../styles/Mixins.scss";
 
 .wrapper {
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 .text {
-  @include big_text;
+  @include Mixins.big_text;
   font-style: italic;
 }
 

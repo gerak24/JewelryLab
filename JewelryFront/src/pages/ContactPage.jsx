@@ -1,18 +1,18 @@
 import React from 'react';
-import {useWindowSize} from '../App'
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import Layout from "../Components/Layout/Layout";
-import Hotspot from "../Components/Sidebar/Hotspot/Hotspot";
-import Main from "../Components/Main/Main";
 import Sidebar from "../Components/Sidebar/Sidebar";
+import Hotspot from "../Components/Sidebar/Hotspot/Hotspot";
 import Logo from "../Components/Sidebar/Logo/Logo";
+import Main from "../Components/Main/Main";
 import Content from "../Components/Content/Content";
-import Home from "../Components/Content/Home/Home";
+import Contacts from "../Components/Content/Contacts/Contacts";
+import {useWindowSize} from "@/App";
 import Popup from "../Components/Popup/Popup";
 
 
-const HomePage = () => {
+const ContactPage = () => {
     const [width] = useWindowSize();
     if (width > 640) {
         return (
@@ -24,7 +24,7 @@ const HomePage = () => {
                         <Hotspot/>
                     </Sidebar>
                     <Content>
-                        <Home/>
+                        <Contacts/>
                     </Content>
                     <Popup/>
                 </Main>
@@ -40,11 +40,12 @@ const HomePage = () => {
                         <Sidebar>
                             <Hotspot/>
                         </Sidebar>
-                        <Home/>
+                        <Contacts/>
                     </Content>
                     <Popup/>
                 </Main>
                 <Footer/>
             </Layout>);
 };
-export default HomePage;
+
+export default ContactPage;

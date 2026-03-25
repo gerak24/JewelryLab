@@ -1,4 +1,4 @@
-@import "../../../styles/Mixins";
+@use "../../../styles/Mixins.scss";
 
 textarea {
   height: 80px;
@@ -16,11 +16,11 @@ textarea {
 }
 
 .cartInfo_title {
-  @include big_text;
+  @include Mixins.big_text;
 }
 
 .cartInfo_form_title {
-  @include medium_text;
+  @include Mixins.medium_text;
   text-align: center;
   margin-bottom: 5px;
 }
@@ -37,7 +37,7 @@ textarea {
 }
 
 .button {
-  @include button;
+  @include Mixins.button;
 }
 
 .cartInfo_input {
@@ -47,7 +47,7 @@ textarea {
   background-color: #cfcfcf;
   border-radius: 5px;
   border: 1px solid black;
-  @include medium_text
+  @include Mixins.medium_text
 }
 
 .cartInfo_input::-webkit-scrollbar {
@@ -67,7 +67,7 @@ textarea {
 }
 
 .alert {
-  @include medium_text;
+  @include Mixins.medium_text;
   margin-top: 5px;
   padding: 3px;
   height: min-content;

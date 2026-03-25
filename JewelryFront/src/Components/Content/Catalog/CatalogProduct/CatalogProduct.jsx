@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './CatalogProduct.module.scss'
 import {useDispatch} from 'react-redux'
-import {addToCart} from '../../../../features/cart/cartSlice'
-import {setProduct} from "../../../../features/cart/productSlice";
+import {addToCart} from '@/features/cart/cartSlice'
+import {setProduct} from '@/features/cart/productSlice';
 
 const CatalogProduct = ({item}) => {
   const {id, name, description, price, image} = item

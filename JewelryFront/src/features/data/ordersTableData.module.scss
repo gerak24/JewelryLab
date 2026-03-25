@@ -1,5 +1,5 @@
-﻿@import "../../styles/Mixins.scss";
-@import "../../styles/ProductMixins.scss";
+﻿@use "../../styles/Mixins.scss";
+@use "../../styles/ProductMixins.scss";
 
 .wrapper {
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 .label {
-  @include product_button;
+  @include ProductMixins.product_button;
   width: max-content;
   height: 90%;
   padding: 5px;

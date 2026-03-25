@@ -1,9 +1,9 @@
 import React from 'react';
-import Product from "./CatalogProduct/CatalogProduct";
+import Product from './CatalogProduct/CatalogProduct';
 import styles from './Catalog.module.scss'
-import {useFetchProduction} from "../../../features/api/products/useFetchProduction";
-import Loader from "../../../shared/Loader/Loader";
-import NotFoundError from "../../../shared/NotFound/NotFoundError";
+import {useFetchProduction} from '@/features/api/products/useFetchProduction';
+import Loader from '../../../shared/Loader/Loader';
+import NotFoundError from '../../../shared/NotFound/NotFoundError';
 
 const Catalog = () => {
   const {data: products, isLoading} = useFetchProduction()

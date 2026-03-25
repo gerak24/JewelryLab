@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './HotspotProduct.module.scss'
 import {useDispatch} from 'react-redux'
-import {addToCart} from '../../../../features/cart/cartSlice'
-import {useWindowSize} from "../../../../App";
-import {setProduct} from "../../../../features/cart/productSlice";
+import {addToCart} from '@/features/cart/cartSlice'
+import {useWindowSize} from '@/App';
+import {setProduct} from '@/features/cart/productSlice';
 
 const HotspotProduct = ({item}) => {
   const {id, name, description, price, image} = item

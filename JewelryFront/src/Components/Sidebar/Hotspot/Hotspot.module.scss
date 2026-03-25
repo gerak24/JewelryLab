@@ -1,4 +1,4 @@
-@import "../../../styles/Mixins";
+@use "../../../styles/Mixins.scss";
 
 .hotspot {
   width: 280px;
@@ -15,7 +15,7 @@
 }
 
 .hotspot_title {
-  @include big_text;
+  @include Mixins.big_text;
   padding-bottom: 10px;
   height: 10%;
 }

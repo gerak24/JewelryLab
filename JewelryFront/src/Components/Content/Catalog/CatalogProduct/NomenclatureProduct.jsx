@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import styles from './CatalogProduct.module.scss'
 import {useDispatch} from 'react-redux'
-import {setNomenc} from "../../../../features/cart/productSlice";
+import {setNomenc} from '@/features/cart/productSlice';
 
 const NomenclatureProduct = ({item}) => {
   const {id, name, description, price, image, isHotOffer, isDeleted} = item

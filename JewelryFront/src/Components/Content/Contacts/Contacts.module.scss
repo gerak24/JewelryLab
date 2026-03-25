@@ -1,4 +1,4 @@
-@import "../../../styles/Mixins";
+@use "../../../styles/Mixins.scss";
 
 .link {
   text-decoration: none;
@@ -17,11 +17,11 @@
 }
 
 .title {
-  @include content_title;
+  @include Mixins.content_title;
 }
 
 .description {
-  @include content_descr;
+  @include Mixins.content_descr;
 }
 
 .iframe_wrapper {

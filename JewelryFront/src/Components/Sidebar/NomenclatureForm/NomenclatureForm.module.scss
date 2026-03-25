@@ -1,4 +1,4 @@
-@import "../../../styles/Mixins";
+@use "../../../styles/Mixins.scss";
 
 textarea {
   height: 80px;
@@ -16,11 +16,11 @@ textarea {
 }
 
 .title {
-  @include big_text;
+  @include Mixins.big_text;
 }
 
 .form_title {
-  @include medium_text;
+  @include Mixins.medium_text;
   text-align: center;
   margin-bottom: 5px;
 }
@@ -43,7 +43,7 @@ textarea {
 }
 
 .text{
-  @include medium_text;
+  @include Mixins.medium_text;
 }
 
 .form {
@@ -59,7 +59,7 @@ textarea {
 }
 
 .clear {
-  @include button;
+  @include Mixins.button;
   border-radius: 35%;
   position: absolute;
   height: min-content;
@@ -70,7 +70,7 @@ textarea {
 }
 
 .button {
-  @include button;
+  @include Mixins.button;
 }
 
 .form_input {
@@ -80,7 +80,7 @@ textarea {
   background-color: #cfcfcf;
   border-radius: 5px;
   border: 1px solid black;
-  @include medium_text
+  @include Mixins.medium_text
 }
 
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
@@ -105,7 +105,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 }
 
 .alert {
-  @include medium_text;
+  @include Mixins.medium_text;
   margin-top: 5px;
   padding: 3px;
   height: min-content;

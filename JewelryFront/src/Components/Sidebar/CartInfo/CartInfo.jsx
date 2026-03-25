@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import styles from './CartInfo.module.scss'
 import {useDispatch, useSelector} from "react-redux";
-import {checkCartStorage, sendOrder} from '../../../features/cart/cartSlice'
-import {useCreateOrder} from "../../../features/api/orders/useCreateOrder";
-import toast from "react-hot-toast";
+import {checkCartStorage, sendOrder} from '@/features/cart/cartSlice'
+import {useCreateOrder} from '@/features/api/orders/useCreateOrder';
+import toast from 'react-hot-toast';
 
 const CartInfo = () => {
   const cart = useSelector((state) => state.cart.value)

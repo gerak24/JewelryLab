@@ -1,4 +1,4 @@
-﻿@import "../../../styles/Mixins";
+﻿@use "../../../styles/Mixins.scss";
 
 .table_wrapper{
   display: flex;
@@ -14,7 +14,7 @@
 }
 
 .table{
-  @include medium_text;
+  @include Mixins.medium_text;
   width: 100%;
   height: max-content;
   border-collapse: collapse;

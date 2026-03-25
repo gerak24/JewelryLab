@@ -1,4 +1,4 @@
-@import "../../styles/Mixins.scss";
+@use "../../styles/Mixins.scss";
 
 .footer {
   background-color: #251f23;
@@ -27,8 +27,8 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-  @include big_text;
-  @include light_gray_font;
+  @include Mixins.big_text;
+  @include Mixins.light_gray_font;
   text-align: center;
   width: 200px;
 }
@@ -37,8 +37,8 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-  @include medium_text;
-  @include light_gray_font;
+  @include Mixins.medium_text;
+  @include Mixins.light_gray_font;
   text-align: center;
   width: 200px;
 }
@@ -47,7 +47,7 @@
   text-align: center;
   text-decoration: none;
   color: #ed1779;
-  @include big_text();
+  @include Mixins.big_text();
   display: flex;
   flex-direction: column;
   transform: scale(0.7);

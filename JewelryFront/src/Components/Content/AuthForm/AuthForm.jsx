@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import styles from './AuthForm.module.scss'
-import logo from "../../../Data/logo.jpg";
-import {useLogin} from "../../../features/api/users/useLogin";
-import {useNavigate} from "react-router-dom";
-import toast from "react-hot-toast";
+import logo from '../../../Data/logo.jpg';
+import {useLogin} from '@/features/api/users/useLogin';
+import {useNavigate} from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 const AuthForm = () => {
 

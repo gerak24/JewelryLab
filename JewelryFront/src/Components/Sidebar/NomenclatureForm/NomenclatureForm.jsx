@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styles from './NomenclatureForm.module.scss'
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch, useSelector} from 'react-redux';
 import {
   clearNomenc,
   setDeleted,
@@ -9,10 +9,10 @@ import {
   setImage,
   setName,
   setPrice
-} from "../../../features/cart/productSlice";
-import {useCreateProduction} from "../../../features/api/products/useCreateProduction";
-import toast from "react-hot-toast";
-import {useUpdateProduction} from "../../../features/api/products/useUpdateProduction";
+} from '@/features/cart/productSlice';
+import {useCreateProduction} from '@/features/api/products/useCreateProduction';
+import toast from 'react-hot-toast';
+import {useUpdateProduction} from '@/features/api/products/useUpdateProduction';
 
 const NomenclatureForm = () => {
   const item = useSelector((state) => state.product.value)

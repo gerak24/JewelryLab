@@ -1,5 +1,5 @@
-@import "../../../../styles/Mixins";
-@import "../../../../styles/ProductMixins";
+@use "../../../../styles/Mixins.scss";
+@use "../../../../styles/ProductMixins.scss";
 
 .content_wrapper {
   border-radius: 8px;
@@ -33,24 +33,24 @@
 }
 
 .product_image {
-  @include product_image
+  @include ProductMixins.product_image
 }
 
 .product_title {
-  @include product_title;
+  @include ProductMixins.product_title;
 }
 
 .product_description {
-  @include product_description;
+  @include ProductMixins.product_description;
 }
 
 
 .product_buttons_wrapper {
-  @include product_buttons_wrapper
+  @include ProductMixins.product_buttons_wrapper
 }
 
 .product_button {
-  @include product_button
+  @include ProductMixins.product_button
 }
 
 .product_icon {
@@ -71,11 +71,11 @@
 }
 
 .product_button_text {
-  @include product_button_text
+  @include ProductMixins.product_button_text
 }
 
 .product_price {
-  @include product_price
+  @include ProductMixins.product_price
 }
 
 .title_block {
@@ -83,7 +83,7 @@
 }
 
 .popup {
-  @include popup;
+  @include Mixins.popup;
   position: absolute;
 }
 

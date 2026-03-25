@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import styles from './Catalog.module.scss'
-import {useFetchProduction} from "../../../features/api/products/useFetchProduction";
+import {useFetchProduction} from "@/features/api/products/useFetchProduction";
 import Loader from "../../../shared/Loader/Loader";
 import NotFoundError from "../../../shared/NotFound/NotFoundError";
 import NomenclatureProduct from "./CatalogProduct/NomenclatureProduct";

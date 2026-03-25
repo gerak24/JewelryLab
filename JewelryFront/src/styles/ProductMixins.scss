@@ -1,4 +1,4 @@
-@import "./Mixins";
+@use "./Mixins.scss";
 
 @font-face {
   font-family: Tilda-Sans; /* Имя шрифта */
@@ -46,8 +46,8 @@
   margin: 2px;
   width: 40%;
   background-color: #251f23;
-  @include medium_text;
-  @include light_gray_font;
+  @include Mixins.medium_text;
+  @include Mixins.light_gray_font;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -65,7 +65,7 @@
 }
 
 @mixin product_title {
-  @include big_text;
+  @include Mixins.big_text;
   padding-top: 5px;
   padding-bottom: 5px;
   display: flex;
@@ -76,7 +76,7 @@
 
 @mixin product_description {
   margin-top: 5px;
-  @include medium_text;
+  @include Mixins.medium_text;
   display: flex;
   flex-grow: 1;
   justify-content: left;
