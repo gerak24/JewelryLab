@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styles from './AuthForm.module.scss'
-import logo from '../../../Data/logo.jpg';
+import logo from '../../../Data/logo.svg';
 import {useLogin} from '@/features/api/users/useLogin';
 import {useNavigate} from 'react-router-dom';
 import toast from 'react-hot-toast';
@@ -28,7 +28,7 @@ const AuthForm = () => {
 
   return (<>
       <div className={styles.logo_wrapper}>
-        <img src={logo} alt="Missing Logo" className={styles.logo_img}/>
+        <img src={logo} alt="Missing Logo" className={styles.logo_svg}/>
       </div>
       <div className={styles.form_wrapper}>
         <div className={styles.title}>Авторизация менеджера</div>

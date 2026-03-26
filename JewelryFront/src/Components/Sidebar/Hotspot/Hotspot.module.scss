@@ -2,14 +2,14 @@
 
 .hotspot {
   width: 280px;
-  height: 420px;
-  background-color: #e1dfdf;
+  height: 640px;
+  box-shadow: 0 4px 8px 0 rgb(189, 189, 189), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
   border-radius: 8px;
-  border: 1px dashed #c84fff;
   margin: 10px;
   padding: 3px;
 }

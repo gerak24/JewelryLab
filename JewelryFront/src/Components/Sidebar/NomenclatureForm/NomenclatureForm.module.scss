@@ -62,8 +62,8 @@ textarea {
   @include Mixins.button;
   border-radius: 35%;
   position: absolute;
-  height: min-content;
-  width:  min-content;
+  height: min-content+5px;
+  width:  min-content+5px;
   font-weight: bold;
   right: 2%;
   bottom: 2%;

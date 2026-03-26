@@ -9,18 +9,18 @@
   width: 300px;
   height: 330px;
   border-radius: 8px;
-  border: 2px solid #c84fff;
-  box-shadow: 0 4px 10px 0 rgb(153, 83, 186), 0 8px 24px 0 rgba(0, 0, 0, 0.19);
-  background-color: #b9c2f6;
+  border: 1px solid #347fe5;
+  box-shadow: 0 4px 8px 0 rgb(189, 189, 189), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f1f1f1;
 }
 
 .logo_wrapper {
   height: 200px;
   width: 200px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
-.logo_img {
+.logo_svg {
   padding: 5px;
   border-radius: 30%;
   height: 100%;
@@ -60,11 +60,11 @@
 
 .auth_input {
   width: 100%;
-  background: #9fa8f3;
+  background: #ececec;
   border-radius: 5px;
-  border: 2px solid #c84fff;
+  border: 1px solid #347fe5;
   height: 30px;
-  box-shadow: 0 2px 4px 0 rgb(153, 83, 186), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(189, 189, 189), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   @include Mixins.medium_text;
-  color: #e6d7ff;
+  color: #0d0d0d;
 }

@@ -11,7 +11,7 @@
   margin-top: 5px;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 60px;
   border-radius: 8px;
 }
 
@@ -24,13 +24,13 @@
   display: flex;
   transition: 0.2s all;
   border-radius: 8px;
-  background: #c14ff4;
+  background: #257ae8;
   i {
     font-size: 1.6rem;
     line-height: normal
   }
   &:hover {
-    background-color: #9fa8f3;
+    background-color: #185eba;
   }
   &:active {
     transform: scale(0.98);
@@ -45,9 +45,9 @@
 @mixin product_price {
   margin: 2px;
   width: 40%;
-  background-color: #251f23;
+  background-color: #f2f2f2;
   @include Mixins.medium_text;
-  @include Mixins.light_gray_font;
+  @include Mixins.dark_gray_font;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -59,8 +59,8 @@
   border-radius: 5px;
   overflow: hidden;
   width: 90%;
-  height: 150px;
-  max-height: 160px;
+  height: 200px;
+  max-height: 200px;
   object-fit: cover;
 }
 

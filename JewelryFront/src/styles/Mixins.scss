@@ -51,6 +51,10 @@
   color: #CECECED6;
 }
 
+@mixin black_font {
+  color: #0d0d0d;
+}
+
 @mixin popup {
   padding: 10px;
   animation: show_popup 0.7s ease;
@@ -61,7 +65,7 @@
   background-color: #32242d;
   border-radius: 8px;
   border: 2px solid #c84fff;
-  box-shadow: 0 4px 20px 0 rgb(153, 83, 186), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(189, 189, 189), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -84,7 +88,7 @@
 
 @mixin button {
   @include medium_text;
-  background: #c14ff4;
+  background: #257ae8;
   text-align: center;
   height: 20px;
   border-radius: 12px;
@@ -100,7 +104,7 @@
   }
 
   &:hover {
-    background-color: #9fa8f3;
+    background-color: #185eba;
   }
 
   &:active {

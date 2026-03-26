@@ -12,7 +12,10 @@ textarea {
   height: inherit;
   align-items: center;
   justify-content: center;
-  max-height: 550px;
+  max-height: 500px;
+  box-shadow: 0 4px 8px 0 rgb(189, 189, 189), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f2f2f2;
+  gap: 15px;
 }
 
 .cartInfo_title {
@@ -29,7 +32,7 @@ textarea {
   margin-top: 5px;
   padding: 5px;
   border-radius: 5px;
-  border: #c84fff 1px dashed;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;

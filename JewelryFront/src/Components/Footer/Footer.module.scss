@@ -1,23 +1,37 @@
 @use "../../styles/Mixins.scss";
 
 .footer {
-  background-color: #251f23;
-  height: 10%;
-  width: 10%;
-  display: flex;
-  position: fixed;
+  background-color: #257ae8;
+  height: 80px;
+  width: 80px;
+  position: absolute;
   right: 15px;
   bottom: 15px;
   border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
+
   i {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: normal;
-    color: #ed1779;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: #347fe5;
+    transform: scale(0.8);
+  }
+
+  &:active {
+    transform: scale(0.98);
   }
 }
-.login{
+
+.login {
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -40,16 +54,15 @@
 .cart {
   text-align: center;
   text-decoration: none;
-  color: #ed1779;
-  @include Mixins.big_text();
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  @include Mixins.medium_text();
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
-  transform: scale(0.7);
-  &:hover{
-    transform: scale(0.8);
-  }
+  gap: 1px;
 }
-
 
 .socials_wrapper {
   display: flex;
@@ -70,7 +83,8 @@
   vertical-align: baseline;
   object-fit: contain;
   object-position: center;
-  &:hover{
+
+  &:hover {
     transform: scale(1.2);
   }
 }
