@@ -9,9 +9,9 @@ const Contacts = () => {
                 Мы находимся по адресу: Ростовская область, г. Ростов-на-Дону, Большая Садовая ул., 76<br/>
                 Наш телелефон: +7 (863) 301-35-00<br/>
                 Сообщество ВКонтакте: <a className={styles.link}
-                                         href="https://vk.com/chicko_russia">https://vk.com/chicko_russia</a><br/>
+                                         href="https://vk.com/">https://vk.com/chicko_russia</a><br/>
                 Наш Телеграм: <a className={styles.link}
-                                 href="https://t.me/+rSRmlAWAO3piMjJi">https://t.me/+rSRmlAWAO3piMjJi</a><br/>
+                                 href="https://web.telegram.org/">https://t.me/+rSRmlAWAO3piMjJi</a><br/>
             </div>
             <div className={styles.iframe_wrapper}>
                 <iframe title="Наш адрес" className={styles.map_wrapper}
