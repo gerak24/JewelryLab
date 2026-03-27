@@ -16,7 +16,7 @@
 
   i {
     font-size: 2rem;
-    color: #fff;
+    @include Mixins.dark_gray_font
   }
 
   &:active {
@@ -53,14 +53,14 @@
     border-radius: 5px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #c14ff4;
+    background-color: #222222;
     border-radius: 5px;
     height: 30px;
   }
 }
 
 .title {
-  color: #fff;
+  @include Mixins.dark_gray_font;
   white-space: nowrap;
   margin-top: 5px;
   line-height: 2rem;
@@ -70,7 +70,7 @@
 
 .description {
   @include Mixins.big_text;
-  color: #fff;
+  @include Mixins.dark_gray_font;
   width: 90%;
   margin: 20px auto;
   overflow-y: auto;
@@ -85,7 +85,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #c14ff4;
+    background-color: #222222;
     border-radius: 5px;
     height: 30px;
   }

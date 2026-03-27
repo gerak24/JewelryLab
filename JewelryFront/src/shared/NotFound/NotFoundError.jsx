@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import styles from './NotFoundError.module.scss'
-import image from '../../Data/notFound.png'
+import image from '../../Data/logo.svg'
 
 const NotFoundError = ({children}) => {
   return (<>

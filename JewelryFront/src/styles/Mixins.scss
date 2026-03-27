@@ -11,10 +11,10 @@
 
 @mixin content_title {
   @include huge_text;
-  color: #ac23e8;
+  color: #0d0d0d;
   font-style: italic;
   margin-bottom: 15px;
-  border-bottom: 2px solid #c84fff;
+  border-bottom: 2px solid #257ae8;
 }
 
 @mixin content_descr {
@@ -62,9 +62,8 @@
   height: 90vh;
   width: min-content;
   position: fixed;
-  background-color: #32242d;
+  background-color: #CECECED6;
   border-radius: 8px;
-  border: 2px solid #c84fff;
   box-shadow: 0 4px 8px 0 rgb(189, 189, 189), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 100;
   display: flex;

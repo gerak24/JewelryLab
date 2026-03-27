@@ -9,7 +9,9 @@ const CartProduct = ({item}) => {
     return (
         <div className={styles.content_wrapper}>
             <div className={styles.product_title}>{name}</div>
-            <img src={image} alt='ooops' className={styles.product_image}></img>
+            <div className={styles.product_image}>
+                <img src={image} alt='ooops'></img>
+            </div>
             <div className={styles.price_count}>
                 <div>Стоимость: {price}руб.</div>
                 <div>В корзине: {amount}</div>
