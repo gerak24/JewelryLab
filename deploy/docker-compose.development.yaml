@@ -63,7 +63,7 @@ services:
   management-api:
     image: hub.gerak/jewelry/management:${PROJECT_VARIANT}
     build:
-      dockerfile:JewelryBack/Dockerfile
+      dockerfile: JewelryBack/Dockerfile
       context: ..
       args:
         - BUILD_CONFIGURATION=${PROJECT_CONFIGURATION}
@@ -123,7 +123,7 @@ services:
       - web
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.http_${PROJECT_NAME}_management_client.rule=HostRegexp(`{subdomain:${HOST_BASE}`)"
+      - "traefik.http.routers.http_${PROJECT_NAME}_management_client.rule=HostRegexp(`${HOST_BASE}`)"
       - "traefik.http.routers.http_${PROJECT_NAME}_management_client.entrypoints=http"
       - "traefik.http.routers.http_${PROJECT_NAME}_management_client.priority=10"
       - "traefik.http.services.http_${PROJECT_NAME}_management_client.loadbalancer.server.port=5173"
