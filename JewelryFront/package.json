@@ -48,6 +48,7 @@
     "@vitejs/plugin-react": "^6.0.1",
     "connect-history-api-fallback": "^2.0.0",
     "express": "^5.2.1",
+    "vite": "^8.0.2",
     "sass": "^1.62.1"
   }
 }
