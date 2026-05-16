@@ -9,7 +9,7 @@ WORKDIR /src
 COPY ["JewelryBack/JewelryBack.csproj", "JewelryBack/"]
 RUN dotnet restore "JewelryBack/JewelryBack.csproj"
 COPY . .
-WORKDIR "/src/ChickoBack"
+WORKDIR "/src/JewelryBack"
 RUN dotnet build "JewelryBack.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
