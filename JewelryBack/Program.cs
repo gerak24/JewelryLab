@@ -52,14 +52,14 @@ builder.Services.AddProblemDetails(options =>
         {
             Title = exception.Message,
             Status = (int)HttpStatusCode.BadRequest,
-            Type = "https://schema.chicko.api/problems",
+            Type = "https://schema.jewlab.api/problems",
         });
     options.Map<EntityNotFoundException>(exception =>
         new ProblemDetails
         {
             Title = exception.Message,
             Status = (int)HttpStatusCode.NotFound,
-            Type = "https://schema.chicko.api/problems/404"
+            Type = "https://schema.jewlab.api/problems/404"
         });
 });
 
